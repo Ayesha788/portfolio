@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.childContainer {
+  width: fit-content;
+  height: 250px;
+  margin: 40px;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: darkcyan;
+  margin: 10px;
+  padding: 20px;
+}
+
+.navigation-button {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.navigation-button:hover {
+  background-color: lightgrey;
+}
+
+#profilePic {
+  height: 300px;
+  width: 300px;
+  float: right;
+  border-radius: 100%;
+  margin-left: 100px;
+}
+
+#footer {
+  background-color: darkcyan;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+
+}
+
+.text {
+  font-size: 50px;
+
+}
+
+.quote {
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-between;
+  font-size: 46px;
+  height: 256px;
+  width: 100%;
+  font-weight: 700;
+  color: #D3D3D3;
+}
+.childContainer2 {
+  width: 300px;
+  height: 350px;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  border: 5px darkcyan solid;
+  animation: anim 2s ease-in 0.5s infinite forwards;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 80px;
+
+}
+.imageContainer {
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.childContainer:hover {
+  background-color: white;
+  transition-duration: 0.5s;
+}
+
+.readmore {
+  width: 70%;
+  margin-top: azure;
+  border: 2px solid darkcyan;
+  border-radius: 5px;
+  background-color: darkcyan;
+  font-size: 10px;
+  padding: 5px;
+  margin-left: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  left: 20px;
+}
+
+.readmore:hover {
+  color: #fefae0;
+  background-color: darkcyan;
+  border: 3px solid darkcyan;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+.shadow-pop-tr {
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+  }
+}
+
+
+  
